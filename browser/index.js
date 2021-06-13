@@ -36,6 +36,10 @@ function ajaxGet(url, data) {
 }
 
 function setOutput(target, type, sentences) {
+  var elLoading = target.querySelector('.loading');
+  if (elLoading) {
+    target.removeChild(elLoading);
+  }
   if (sentences && sentences.length) {
     var elUl = document.createElement('ul');
     sentences.forEach(function (sentence) {
@@ -124,12 +128,14 @@ function main() {
   var elInput = document.getElementById('input');
   elInput.addEventListener('input', throttle(function(e) {
     var elOutput = document.getElementById('output');
-    elOutput.innerHTML = '';
+    elOutput.innerHTML = '<p class="loading">Loading...</p>';
 
-    var elLanguage = document.getElementById('lang');
-    translateWithGoogle(elOutput, e.target.value, elLanguage.value);
-    translateWithYoudao(elOutput, e.target.value, elLanguage.value);
-    // translateWithBing(elOutput, e.target.value, elLanguage.value);
+    if (e.target.value) {
+      var elLanguage = document.getElementById('lang');
+      translateWithGoogle(elOutput, e.target.value, elLanguage.value);
+      translateWithYoudao(elOutput, e.target.value, elLanguage.value);
+      // translateWithBing(elOutput, e.target.value, elLanguage.value);
+    }
   }));
   document.addEventListener('visibilitychange', function() {
     elInput.focus();

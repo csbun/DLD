@@ -28,6 +28,10 @@ input:focus, textarea:focus, select:focus {
   padding: 4px;
 }
 
+#output .loading {
+  text-align: center;
+}
+
 #output h2 {
   line-height: 16px;
   font-size: 12px;
