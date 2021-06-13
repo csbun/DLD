@@ -131,6 +131,12 @@ function main() {
     translateWithYoudao(elOutput, e.target.value, elLanguage.value);
     // translateWithBing(elOutput, e.target.value, elLanguage.value);
   }));
+  document.addEventListener('visibilitychange', function() {
+    elInput.focus();
+  });
+  setTimeout(function() {
+    elInput.focus();
+  }, 100);
 }
 
 main();

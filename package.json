@@ -5,12 +5,20 @@
   "main": "app.js",
   "scripts": {
     "dev": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "menubar": "^9.0.4"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
     "electron": "^12"
   },
   "repository": {
@@ -26,5 +34,34 @@
   "bugs": {
     "url": "https://github.com/csbun/ft/issues"
   },
-  "homepage": "https://github.com/csbun/ft#readme"
+  "homepage": "https://github.com/csbun/ft#readme",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "icon/iconTemplate@2x.png"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "ft"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
 }

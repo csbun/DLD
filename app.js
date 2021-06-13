@@ -1,3 +1,4 @@
+const path = require('path');
 const { globalShortcut, nativeImage } = require('electron')
 const { menubar } = require('menubar');
 
@@ -8,7 +9,8 @@ const mb = menubar({
     width: IS_DEBUG ? 800 : 400,
     height: IS_DEBUG ? 800 : 400,
   },
-  icon: nativeImage.createFromPath('icon/iconTemplate.png'),
+  icon: nativeImage.createFromPath(path.resolve(__dirname, 'icon', 'iconTemplate.png')),
+  showDockIcon: false,
 });
 
 mb.on('ready', () => {
