@@ -1,6 +1,6 @@
 {
-  "name": "dld",
-  "description": "DeepL Translator Desktop",
+  "name": "ft",
+  "description": "Fast Translator",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csbun/DLD.git"
+    "url": "git+https://github.com/csbun/ft.git"
   },
   "keywords": [
     "DeepL",
@@ -24,7 +24,7 @@
   "author": "Hans Chan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/csbun/DLD/issues"
+    "url": "https://github.com/csbun/ft/issues"
   },
-  "homepage": "https://github.com/csbun/DLD#readme"
+  "homepage": "https://github.com/csbun/ft#readme"
 }

@@ -1,2 +1,2 @@
-# DLD
-DeepL Desktop
+# ft
+Fast Translator
