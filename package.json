@@ -1,0 +1,30 @@
+{
+  "name": "dld",
+  "description": "DeepL Translator Desktop",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "menubar": "^9.0.4"
+  },
+  "devDependencies": {
+    "electron": "^12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csbun/DLD.git"
+  },
+  "keywords": [
+    "DeepL",
+    "translator"
+  ],
+  "author": "Hans Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csbun/DLD/issues"
+  },
+  "homepage": "https://github.com/csbun/DLD#readme"
+}
