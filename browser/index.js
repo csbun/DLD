@@ -128,9 +128,10 @@ function main() {
   var elInput = document.getElementById('input');
   elInput.addEventListener('input', throttle(function(e) {
     var elOutput = document.getElementById('output');
-    elOutput.innerHTML = '<p class="loading">Loading...</p>';
+    elOutput.innerHTML = '';
 
     if (e.target.value) {
+      elOutput.innerHTML = '<p class="loading">Loading...</p>';
       var elLanguage = document.getElementById('lang');
       translateWithGoogle(elOutput, e.target.value, elLanguage.value);
       translateWithYoudao(elOutput, e.target.value, elLanguage.value);
@@ -139,6 +140,7 @@ function main() {
   }));
   document.addEventListener('visibilitychange', function() {
     elInput.focus();
+    elInput.select();
   });
   setTimeout(function() {
     elInput.focus();
