@@ -2,7 +2,7 @@
   "name": "ft",
   "productName": "ft",
   "description": "Fast Translator",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "app.js",
   "scripts": {
     "dev": "electron .",
