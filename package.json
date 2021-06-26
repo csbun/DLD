@@ -1,5 +1,6 @@
 {
   "name": "ft",
+  "productName": "ft",
   "description": "Fast Translator",
   "version": "1.0.0",
   "main": "app.js",
