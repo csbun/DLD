@@ -2,6 +2,8 @@
 
 Fast Translator
 
+Download the [latest version](https://github.com/csbun/ft/releases).
+
 ## Usage
 
 Shortcut: `⌘ Y`

@@ -1,6 +1,5 @@
 {
   "name": "ft",
-  "productName": "ft",
   "description": "Fast Translator",
   "version": "0.1.1",
   "main": "app.js",
@@ -38,9 +37,10 @@
   },
   "homepage": "https://github.com/csbun/ft#readme",
   "build": {
-    "appId": "csbun",
-    "mac": {
-      "category": "io.csbun.ft"
+    "appId": "io.csbun.ft",
+    "productName": "ft",
+    "directories": {
+      "buildResources": "icon"
     }
   },
   "config": {

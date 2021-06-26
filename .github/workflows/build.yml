@@ -1,6 +1,11 @@
 name: Build/release
 
-on: push
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    tags:
+      # Push events to v*.*.* tags
+      - v*.*.*
 
 jobs:
   release:
