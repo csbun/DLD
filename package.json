@@ -40,7 +40,7 @@
     "appId": "io.csbun.ft",
     "productName": "ft",
     "directories": {
-      "buildResources": "icon"
+      "buildResources": "resources"
     }
   },
   "config": {
