@@ -2,6 +2,8 @@
 
 Fast Translator
 
+![](screenshot.jpg)
+
 Download the [latest version](https://github.com/csbun/ft/releases).
 
 ## Usage
